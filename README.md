@@ -25,3 +25,6 @@ This project is based on Google's Online Boutique microservices demo.
 - Product category summary implemented
 - Basic unit tests added
 - Python dependencies documented
+- Developed a REST API using Flask for the product catalog.
+- Implemented endpoints to retrieve all products, search by product ID, and check API health.
+- Tested the API successfully using a web browser.
