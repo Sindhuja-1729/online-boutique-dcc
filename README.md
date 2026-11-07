@@ -19,3 +19,9 @@ This project is based on Google's Online Boutique microservices demo.
 - GitHub repository created
 - Basic architecture identified
 - Project documentation started
+- Product catalog data added using JSON
+- Product data loading functionality implemented
+- Product search functionality added
+- Product category summary implemented
+- Basic unit tests added
+- Python dependencies documented
