@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+
+from flask import Flask, jsonify, request
 import json
 from pathlib import Path
 
@@ -29,6 +30,18 @@ def get_product(product_id):
             return jsonify(product)
 
     return jsonify({"message": "Product not found"}), 404
+
+
+@app.route("/search", methods=["GET"])
+def search_products():
+    query = request.args.get("q", "").lower()
+
+    results = [
+        product for product in products
+        if query in product["name"].lower()
+    ]
+
+    return jsonify(results)
 
 
 @app.route("/health", methods=["GET"])
